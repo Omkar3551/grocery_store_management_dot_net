@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Adminmaster.master.cs" Inherits="WebApplication1.View.Admin.Adminmaster" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>Admin</title>
+    <link rel="icon" href="../../Asset/Images/Icon.png" />
+     <link rel="stylesheet" href="../../Asset/Lib/Bootstrap/css/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid text-dark">
+      <img src="../../Asset/imgs/favicon.ico"/>
+    <a class="navbar-brand" href="HomePage.html"><b>Lifeline Grocery Management</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a type="button" target="_blank" class="btn btn-outline-success" href="http://localhost:3000/">lifeline.com</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+       <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px"  href="HomePage.html"><h5>Home</h5></a>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px"  href="Seller.aspx"><h5>Sellers</h5></a>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px" href="Categories.aspx"><h5>Categories</h5></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Products.aspx"><h5>Products</h5></a>
+        </li>
+          
+          
+          <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px"  href="Dashboard.aspx"><h5>Dashboard</h5></a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" style="margin-left:15px"  href="../Login.aspx"><h5>Logout</h5></a>
+        </li>
+      </ul>
+      
+      
+    </div>
+  </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server" >
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>
