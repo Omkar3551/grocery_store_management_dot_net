@@ -1,1 +1,2 @@
-web: dotnet run --project ./WebApplication1.csproj
+web: dotnet run --project ./Grocery_store_management.csproj
+
